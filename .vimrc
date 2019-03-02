@@ -7,7 +7,6 @@ set expandtab
 "
 " UI config
 "
-
 set number
 set cursorline
 filetype indent on      " load filetype-specific indent files
