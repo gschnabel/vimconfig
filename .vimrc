@@ -46,3 +46,9 @@ filetype plugin indent on
 au filetype py set autoindent
 au filetype py set smartindent
 au filetype py set textwidth=79   " PEP-8 friendly
+
+"
+" pathogen setup
+"
+call pathogen#infect()
+" call pathogen#helptags()
