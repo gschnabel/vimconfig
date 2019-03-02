@@ -3,11 +3,13 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set expandtab
+set shiftwidth=4
 
 "
 " UI config
 "
 set number
+set ruler
 set cursorline
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplate for command menu
@@ -35,3 +37,12 @@ set foldmethod=indent
 let mapleader=","       " default leader is \
 inoremap jk <esc>       " jk is escape
 
+"
+" python specific stuff
+"
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
+  \ [%l/%L\ (%p%%)
+filetype plugin indent on
+au filetype py set autoindent
+au filetype py set smartindent
+au filetype py set textwidth=79   " PEP-8 friendly
