@@ -15,6 +15,8 @@ set wildmenu            " visual autocomplate for command menu
 set lazyredraw          " redraw only when need to
 set showmatch           " highlight matching [{()}]
 
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 80)
 "
 " searching
 "
@@ -81,4 +83,5 @@ map <silent>,h <C-w>h
 map <silent>,j <C-w>j
 map <silent>,k <C-w>k
 map <silent>,l <C-w>l
+
 
