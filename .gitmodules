@@ -4,3 +4,6 @@
 [submodule "bundle/vimcmdline"]
 	path = bundle/vimcmdline
 	url = https://github.com/jalvesaq/vimcmdline.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git

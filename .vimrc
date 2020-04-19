@@ -1,4 +1,5 @@
 " colorscheme badwolf
+colorscheme desert
 syntax enable
 set tabstop=4
 set softtabstop=4
@@ -36,7 +37,8 @@ set foldmethod=indent
 " leader shortcuts
 "
 let mapleader=","       " default leader is \
-inoremap jk <esc>       " jk is escape
+" jk is escape
+inoremap jk <esc>
 
 "
 " python specific stuff
@@ -49,7 +51,15 @@ filetype plugin indent on
 au filetype py set autoindent
 au filetype py set smartindent
 au filetype py set textwidth=79   " PEP-8 friendly
-
+" 
+" ale - code linter
+" 
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_linters = {'python': ['flake8'], 'fortran': ['gcc']}
 "
 " pathogen setup
 "
