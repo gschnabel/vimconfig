@@ -10,3 +10,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim
+[submodule "bundle/UltiSnips"]
+	path = bundle/UltiSnips
+	url = https://github.com/sirver/UltiSnips
