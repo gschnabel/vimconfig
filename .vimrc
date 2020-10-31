@@ -1,5 +1,6 @@
 " colorscheme badwolf
-colorscheme desert
+colorscheme summerfruit256
+" desert was old
 syntax enable
 set tabstop=4
 set softtabstop=4
