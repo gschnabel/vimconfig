@@ -52,6 +52,13 @@ filetype plugin indent on
 au filetype py set autoindent
 au filetype py set smartindent
 au filetype py set textwidth=79   " PEP-8 friendly
+
+" jedi-vim - autocompletion
+au filetype python setlocal splitbelow
+au filetype python setlocal pumheight=5
+au filetype python setlocal completeopt-=preview
+
+"
 " 
 " ale - code linter
 " 
