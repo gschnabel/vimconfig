@@ -20,14 +20,6 @@ set showmatch           " highlight matching [{()}]
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 80)
 "
-" searching
-"
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
-nnoremap <leader><space> :nohlsearch<CR>    " turn of search highlight
-nnoremap <Leader>f :vimgrep // **/*.* <Bar> cwindow<Home><Right><Right><Right><Right><Right><Right><Right><Right><Right>
-
-"
 " folding
 "
 set foldenable
@@ -41,6 +33,14 @@ set foldmethod=indent
 let mapleader=","       " default leader is \
 " jk is escape
 inoremap jk <esc>
+"
+" searching
+"
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+nnoremap <leader><space> :nohlsearch<CR>    " turn of search highlight
+nnoremap <Leader>f :vimgrep // **/*.* <Bar> cwindow<Home><Right><Right><Right><Right><Right><Right><Right><Right><Right>
+
 "
 " UltiSnips maps
 "
