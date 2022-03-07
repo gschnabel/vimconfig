@@ -1,5 +1,5 @@
 " colorscheme badwolf
-colorscheme summerfruit256
+colorscheme eclipse
 " desert was old
 syntax enable
 set tabstop=4
