@@ -25,6 +25,7 @@ call matchadd('ColorColumn', '\%81v', 80)
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 nnoremap <leader><space> :nohlsearch<CR>    " turn of search highlight
+nnoremap <Leader>f :vimgrep // **/*.* <Bar> cwindow<Home><Right><Right><Right><Right><Right><Right><Right><Right><Right>
 
 "
 " folding
